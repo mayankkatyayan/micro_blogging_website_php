@@ -259,7 +259,19 @@ include 'partials/header.php';
       <a href="" class="category__button">Music</a>
     </div>
    </section>
-
+Route :: get('/dashboard', function() {
+   return view('index');
+});
+Route :: get('/about', function() {
+   return view('about');
+});
+Route :: get('/post', function() {
+   return view('post');
+});
+Route :: get('/blog', function() {
+   return view('blog');
+});
+Route :: view("about",'about'); 
 <!---=====================END OF POSTS====================--->
 <?php
 include 'partials/footer.php';
